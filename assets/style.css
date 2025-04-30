@@ -352,5 +352,11 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
+
+	/*Fix click issues due to arrows on border of the screen */
+	.modal-content {
+		width: 90%;
+		margin: auto;
+	}
 }
 
