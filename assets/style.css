@@ -15,6 +15,16 @@ picture.gallery-item {
 	padding: 0px;
 }
 
+/*Mettre le gallery item au niveau de picture*/
+
+.gallery-item img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: .5em;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
