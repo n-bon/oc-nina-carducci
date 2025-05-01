@@ -2,10 +2,19 @@ body {
 	max-width: 1920px;
 	margin: auto;
 }
+
+
 * {
 	font-family: 'Inter';
 	font-style: normal;
 }
+
+/*Réinitialiser le paddind de picture */
+
+picture.gallery-item {
+	padding: 0px;
+}
+
 .top-header {
 	background-color: white;
 	position: sticky;
