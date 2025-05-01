@@ -49,11 +49,13 @@
     navigation: true
   };
   $.fn.mauGallery.listeners = function(options) {
-    $(".gallery-item").on("click", function() {
-      if (options.lightBox && $(this).prop("tagName") === "IMG") {
-        $.fn.mauGallery.methods.openLightBox($(this), options.lightboxId);
-      } else {
-        return;
+    $(".gallery-item").on("click", function(event) {
+      let target = $(event.target);
+      if (options.lightBox) {
+        let image = target.is("img") ? target : $(this).find("img").first();
+        if (image.length) {
+          $.fn.mauGallery.methods.openLightBox(image, options.lightboxId);
+        }
       }
     });
 
@@ -121,7 +123,7 @@
     },
     prevImage() {
       let activeImage = null;
-      $("img.gallery-item").each(function() {
+      $(".gallery-item img").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
@@ -130,18 +132,18 @@
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
+          if ($(this).find("img").length) {
+            imagesCollection.push($(this).find("img"));
           }
         });
       } else {
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+              .find("img")
               .data("gallery-tag") === activeTag
           ) {
-            imagesCollection.push($(this).children("img"));
+            imagesCollection.push($(this).find("img"));
           }
         });
       }
@@ -159,7 +161,7 @@
     },
     nextImage() {
       let activeImage = null;
-      $("img.gallery-item").each(function() {
+      $(".gallery-item img").each(function() {
         if ($(this).attr("src") === $(".lightboxImage").attr("src")) {
           activeImage = $(this);
         }
@@ -168,18 +170,18 @@
       let imagesCollection = [];
       if (activeTag === "all") {
         $(".item-column").each(function() {
-          if ($(this).children("img").length) {
-            imagesCollection.push($(this).children("img"));
+          if ($(this).find("img").length) {
+            imagesCollection.push($(this).find("img"));
           }
         });
       } else {
         $(".item-column").each(function() {
           if (
             $(this)
-              .children("img")
+              .find("img")
               .data("gallery-tag") === activeTag
           ) {
-            imagesCollection.push($(this).children("img"));
+            imagesCollection.push($(this).find("img"));
           }
         });
       }
