@@ -14,7 +14,44 @@
 	<script src="./assets/scripts.js"></script>
 	<!--Insérer la titraille-->
 	<title>Nina Carducci, photographe sur Bordeaux</title>
-	<meta name="description" content="Votre photographe professionnelle à Bordeaux. Nina Carducci réalise de prestations de shooting, retouches et création d’albums pour immortaliser et sublimer les plus beaux moments de votre vie.">
+	<meta name="description" content="Votre photographe professionnelle à Bordeaux. Nina Carducci réalise de prestations de shooting, retouches et création d’albums pour immortaliser et sublimer les plus beaux moments de votre vie. Spécialiste des portraits, photos d'entreprises, mariages et concerts.">
+	<!--Insérer le script pour le référencement local, mettre à jour les URL lors du passage en prod-->
+	<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Photograph",
+		  "name": "Nina Carducci",
+		  "image": "https://n-bon.github.io/oc-nina-carducci/assets/images/portrait-nina-carducci.webp",
+		  "url": "https://n-bon.github.io/oc-nina-carducci/",
+		  "telephone": "+33 5 56 67 78 89",
+		  "priceRange": "€",
+		  "address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		  },
+		  "geo": {
+			"@type": "GeoCoordinates",
+			"latitude": 44.84667300938,
+			"longitude": -0.606579976439
+		  },
+		  "openingHours": "Mo-Fr 10:00-19:00",
+		  "sameAs": "https://www.instagram.com/ninacarducci.photo",
+		  "description": "Photographe professionnelle basée à Bordeaux. Spécialiste en portraits, mariages, concerts et photos d'entreprises. Intervenant également à Paris et en Île-de-France.",
+		  "areaServed": [
+			{
+			  "@type": "Place",
+			  "name": "Bordeaux et sa région"
+			},
+			{
+			  "@type": "Place",
+			  "name": "Paris et sa région"
+			}
+		  ]
+		}
+		</script>
 </head>
 <body>
 <div class="top-header">
