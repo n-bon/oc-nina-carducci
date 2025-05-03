@@ -286,6 +286,22 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+footer {
+	padding: 30px 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+footer p {
+	margin-bottom: 0px;
+	font-size: 0.8rem;
+}
+
+footer a {
+	color: #000000;
+}
+
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -411,6 +427,11 @@ input[type="submit"] {
 	.modal-content {
 		width: 90%;
 		margin: auto;
+	}
+
+	footer {
+		padding: 30px;
+		flex-wrap: wrap;
 	}
 }
 
