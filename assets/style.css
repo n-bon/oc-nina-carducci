@@ -296,6 +296,22 @@ input[type="submit"] {
 	padding: 100px;
 }
 
+.legal-main h2 {
+	margin-bottom: 60px;
+}
+
+.legal-main h3 {
+	margin: 30px 0px;
+}
+
+.legal-main h4 {
+	margin: 15px 0px;
+}
+
+.legal-main a {
+	color: #000000;
+}
+
 footer {
 	padding: 30px 100px;
 	display: flex;
