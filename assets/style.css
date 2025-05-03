@@ -112,6 +112,19 @@ picture.gallery-item {
 	font-size: 14px;
 }
 
+.section-intro {
+	max-width: 800px;
+    margin: auto;
+    padding: 0px 15px;
+    text-align: left;
+}
+
+.intro-explain {
+	text-align: center;
+	font-style: italic;
+	margin-top: 2rem;
+}
+
 #gallery {
 	/*	min-height: 100vh; */
 }
@@ -235,6 +248,10 @@ picture.gallery-item {
 	bottom: 0;
 	right: 0;
 	z-index: -1;
+}
+
+.tel-link {
+	color: #000000;
 }
 .form-container {
 	flex : 2;
