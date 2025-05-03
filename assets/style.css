@@ -41,6 +41,11 @@ picture.gallery-item {
 	font-size: 26px;
 }
 
+.name a {
+	text-decoration: none;
+	color: #000000;
+}
+
 .nav ul {
 	display: flex;
 	list-style-type: none;
@@ -286,6 +291,11 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.legal-main {
+	background-color: var(--bs-gray-100);
+	padding: 100px;
+}
+
 footer {
 	padding: 30px 100px;
 	display: flex;
@@ -301,6 +311,8 @@ footer p {
 footer a {
 	color: #000000;
 }
+
+
 
 @media all and (max-width: 1180px) {
 	.picture {
@@ -427,6 +439,10 @@ footer a {
 	.modal-content {
 		width: 90%;
 		margin: auto;
+	}
+
+	.legal-main {
+		padding: 30px;
 	}
 
 	footer {
