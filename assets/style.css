@@ -140,6 +140,10 @@ picture.gallery-item {
 .gallery .nav {
 	justify-content: center;
 }
+
+.gallery img {
+	cursor: pointer;
+}
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #000000;
 	background-color: #BEB45A;
