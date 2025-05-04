@@ -130,9 +130,6 @@ picture.gallery-item {
 	margin-top: 2rem;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
 .title{
 	text-align: center;
 	padding-block: 2em;
@@ -140,6 +137,13 @@ picture.gallery-item {
 .gallery .nav {
 	justify-content: center;
 }
+
+
+.gallery picture {
+	cursor: pointer;
+}
+
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #000000;
 	background-color: #BEB45A;
